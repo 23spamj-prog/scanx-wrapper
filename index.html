@@ -1,34 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>ScanX</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="application-name" content="ScanX">
-<meta name="apple-mobile-web-app-title" content="ScanX">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#2563EB">
-<link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" type="image/png" href="icon-192.png">
-<link rel="manifest" href="manifest.webmanifest">
-<style>
-  html,body{margin:0;height:100%;background:#2563EB}
-  iframe{position:fixed;inset:0;width:100%;height:100%;border:0;background:#fff}
-  #fb{position:fixed;left:0;right:0;bottom:12px;text-align:center;font:14px sans-serif}
-  #fb a{color:#fff;background:rgba(0,0,0,.35);padding:6px 12px;border-radius:14px;text-decoration:none}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="application-name" content="ScanX">
+  <meta name="apple-mobile-web-app-title" content="ScanX">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>ScanX</title>
+
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbydvIDfkTvBTA6sL5YsnTdfa-rjc8d4ciwlczzMRsMPHXYbDXNC-uQne0d-kIrIBfK0lA/exec">
+
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+      background:#2563EB;
+      color:#fff;
+      font:16px system-ui,-apple-system,sans-serif;
+    }
+
+    main{
+      min-height:100%;
+      display:grid;
+      place-content:center;
+      text-align:center;
+      padding:24px;
+      box-sizing:border-box;
+    }
+
+    a{
+      color:white;
+      text-decoration:underline;
+    }
+  </style>
+
+  <script>
+    window.location.replace('https://script.google.com/macros/s/AKfycbydvIDfkTvBTA6sL5YsnTdfa-rjc8d4ciwlczzMRsMPHXYbDXNC-uQne0d-kIrIBfK0lA/exec');
+  </script>
 </head>
+
 <body>
-<iframe id="app" allow="clipboard-write; fullscreen"></iframe>
-<div id="fb" hidden><a id="open" href="#">Open ScanX directly</a></div>
-<script>
-  // Apna Apps Script web app URL (…/exec) yahan paste karo
-  var APP_URL = "https://script.google.com/macros/s/AKfycbydvIDfkTvBTA6sL5YsnTdfa-rjc8d4ciwlczzMRsMPHXYbDXNC-uQne0d-kIrIBfK0lA/exec";
-  document.getElementById("app").src = APP_URL;
-  var a = document.getElementById("open");
-  a.href = APP_URL;
-  setTimeout(function(){ document.getElementById("fb").hidden = false; }, 6000);
-</script>
+  <main>
+    <h1>Opening ScanX…</h1>
+    <p>
+      If it does not open automatically,
+      <a href="https://script.google.com/macros/s/AKfycbydvIDfkTvBTA6sL5YsnTdfa-rjc8d4ciwlczzMRsMPHXYbDXNC-uQne0d-kIrIBfK0lA/exec">
+        open ScanX directly
+      </a>.
+    </p>
+  </main>
 </body>
 </html>
